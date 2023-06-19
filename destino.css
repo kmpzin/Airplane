@@ -1,0 +1,168 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --white: #fff;
+  --purple: #8257e6;
+  --gray-900: #121214;
+  --gray-800: #1c1c1f;
+  --gray-500: #50505c;
+  --gray-200: #c1c1c4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--gray-900);
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  background: var(--purple);
+  color: var(--white);
+  padding: 7px;
+  cursor: pointer;
+  width: 119px;
+  margin-left: 1175px;
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: var(--gray-800);
+}
+
+.fl-table td,
+.fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  border-right: 1px solid var(--gray-500);
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  color: var(--white);
+  background: var(--purple);
+}
+
+.fl-table2 thead th {
+  color: var(--white);
+  background: var(--gray-800);
+}
+
+.fl-table thead th:nth-child(odd) {
+  color: var(--white);
+}
+
+/* .fl-table tr:nth-child(even) {
+  background: var(--white);
+} */
+
+.checkedP1 {
+  display: inline-block;
+  width: 31%;
+  text-align: center;
+}
+
+.checkedP2 {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+}
+
+.checkedP3 {
+  display: inline-block;
+  width: 36%;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  .fl-table {
+    display: block;
+    width: 100%;
+  }
+  .table-wrapper:before {
+    content: "Scroll horizontally >";
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: white;
+    padding: 0 0 10px;
+  }
+  .fl-table thead,
+  .fl-table tbody,
+  .fl-table thead th {
+    display: block;
+  }
+  .fl-table thead th:last-child {
+    border-bottom: none;
+  }
+  .fl-table thead {
+    float: left;
+  }
+  .fl-table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  .fl-table td,
+  .fl-table th {
+    padding: 20px 0.625em 0.625em 0.625em;
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+  }
+  .fl-table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+  .fl-table tbody tr {
+    display: table-cell;
+  }
+  .fl-table tbody tr:nth-child(odd) {
+    background: none;
+  }
+  .fl-table tr:nth-child(even) {
+    background: transparent;
+  }
+  .fl-table tr td:nth-child(odd) {
+    background: #f8f8f8;
+    border-right: 1px solid #e6e4e4;
+  }
+  .fl-table tr td:nth-child(even) {
+    border-right: 1px solid #e6e4e4;
+  }
+  .fl-table tbody td {
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Login - AirPlane</title>
+  </head>
+  <body>
+    <div class="flex-conteiner">
+      <div class="flex-item">
+        <header class="header">
+          <h1>AirPlane</h1>
+        </header>
+        <div class="form-conteiner">
+          <div class="flex-title">
+            <img src="./img/bx-planet.svg" alt="logot" />
+            <h4>Faça seu login</h4>
+          </div>
+          <p>Entre com suas informações de cadastros</p>
+          <div class="flex-form">
+            <form action="autenticar.php" method="post">
+              <div>
+                <label for="email">E-mail</label><br />
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+              <br />
+              <div>
+                <label for="password">Senha</label> <br />
+                <div class="password-conteiner">
+                  <input
+                    class="form-input"
+                    type="password"
+                    name="senha"
+                    id="passoword"
+                    placeholder="Digite sua senha"
+                  />
+                  <span class="eye-password"></span>
+                </div>
+              </div>
+
+              <label class="conteiner" for="lembrar">
+                Lembre-me
+                <input id="lembrar" name="lembrar" type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <span class="esqueci_password">Esqueci minha senha</span>
+              <br />
+              <button class="form-button" type="submit">Entrar</button>
+              <p>
+                Não tem uma conta? <a href="register.html"><b>Registre-se</b></a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="image-conteiner">
+        <!-- <img src="./img/photo-1621560222298-0824faf9add5.avif" alt=""> -->
+      </div>
+    </div>
+
+    <footer>
+      <div id="footer_content">
+          <div id="footer_contacts">
+              <h1>AirPlane</h1>
+              <p>Lorem ipsum dolor.</p>
+
+              <div id="footer_social_media">
+                  <a href="#" class="footer-link" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+
+                  <a href="#" class="footer-link" id="facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href="#" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+              </div>
+          </div>
+          
+          <ul class="footer-list">
+              <li>
+                  <h3>Lorem ipsum dolor</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Lorem ipsum dolor</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Lorem ipsum dolor</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Lorem ipsum dolor</a>
+              </li>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Lorem ipsum dolor</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Lorem ipsum dolor</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Lorem ipsum dolor</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Lorem ipsum dolor</a>
+              </li>
+          </ul>
+
+          <div id="footer_subscribe">
+              <h3>Subscribe</h3>
+
+              <p>
+                  Enter your e-mail to get notified about
+                  our news solutions
+              </p>
+
+              <div id="input_group">
+                  <input type="email" id="email">
+                  <button>
+                    <i class='bx bx-envelope'></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div id="footer_copyright">
+          &#169
+          2023 Desenvolved by Kemp ツ
+      </div>
+  </footer>
+  </body>
+</html>
